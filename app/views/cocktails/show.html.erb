@@ -5,5 +5,11 @@
   <%= @cocktail.name %>
 </p>
 
+<ul>
+  <% @cocktail.doses.each do |d| %>
+    <li><%= d.description + " " + d.ingredient.name %></li>
+  <% end %>
+</ul>
+<%= render "doses/form", cocktail: @cocktail, dose: @dose %>
 <%= link_to 'Edit', edit_cocktail_path(@cocktail) %> |
 <%= link_to 'Back', cocktails_path %>
