@@ -14,9 +14,8 @@
       <a href="/" class="navbar-cocktail-brand">
         <%= image_tag "logo.png", {class: "img-circle", id: "logo"} %>
       </a>
-
       <!-- Right Navigation -->
-      <div class="navbar-cocktail-right hidden-xs hidden-sm">
+      <div class="navbar-cocktail-right">
         <form action class="navbar-cocktail-search">
           <input type="text" class="navbar-cocktail-search-input" placeholder="Search Here....">
           <button type="submit" class="navbar-cocktail-search-btn">
@@ -31,8 +30,11 @@
         </a>
 
         <!-- Dropdown appearing on mobile only -->
-        <div class="navbar-cocktail-item hidden-md hidden-lg">
+        <div class="navbar-cocktail-item ">
           <div class="dropdown">
+            <a href="/" class="navbar-cocktail-brand">
+              <%= image_tag "cocktail.jpg", {class: "img-circle", id: "pic"} %>
+            </a>
             <i class="fa fa-bars dropdown-toggle" id="navbar-cocktail-menu" data-toggle="dropdown"></i>
             <ul class="dropdown-menu dropdown-menu-right navbar-cocktail-dropdown-menu">
               <li><a href="/cocktails/new">Add a Cocktail</a></li>

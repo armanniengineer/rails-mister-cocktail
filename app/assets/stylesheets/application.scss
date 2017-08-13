@@ -13,3 +13,32 @@
 // @import "layouts/index";
 // @import "components/index";
 // @import "pages/index";
+
+img#pic {
+  width: 30px !important;
+}
+img#logo {
+  width: 40px;
+}
+
+.navbar-cocktail{
+  background-color: white;
+  transition: all 0.3s ease;
+  height: 70px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-cocktail-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-cocktail-item {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
